@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: arial;
+  height: 10;
+}
+
+.btn {
+    position: relative;
+    background: #51ef90;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    overflow: hidden;
+    outline: none;
+    z-index: 1;
+    margin-top: 8px;
+    margin-left: 30px;
+  }
+  .btn:focus {
+    outline: 2px solid rgb(25, 25, 169);
+  }
+  .btn .submit {
+    position: absolute;
+    background: rgba(160, 160, 241, 0.601);
+    width: 0%;
+    height: 0%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 100%;
+    transform: translate(-50% , -50%);
+    transition: width 450ms ease-out, width 450ms ease-out, opacity 450ms ease-out;
+  }
